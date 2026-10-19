@@ -12,9 +12,9 @@ if any(mount.mountPoint == '/mnt/tokyoolymic' for mount in dbutils.fs.mounts()):
 
 configs = {"fs.azure.account.auth.type": "OAuth",
 "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
-"fs.azure.account.oauth2.client.id": "70c3178e-0ca5-4ff1-acc7-6b6f8acd4fdf",
-"fs.azure.account.oauth2.client.secret": 'W9T8Q~YeGv0QeP3TBCXKfV.LMzrOCZ1PbCONQdc.',
-"fs.azure.account.oauth2.client.endpoint": "https://login.microsoftonline.com/de42c3d7-6a60-43f6-807e-d7613da8b6aa/oauth2/token"}
+"fs.azure.account.oauth2.client.id": "<YOUR-CLIENT-ID>",
+"fs.azure.account.oauth2.client.secret": "<YOUR-CLIENT-SECRET>",
+"fs.azure.account.oauth2.client.endpoint": "https://login.microsoftonline.com/<YOUR-TENANT-ID>/oauth2/token"}
 
 
 dbutils.fs.mount(
